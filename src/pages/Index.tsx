@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Mail, Heart, Zap } from 'lucide-react';
-import CountdownTimer from '@/components/CountdownTimer';
 import EmailSignup from '@/components/EmailSignup';
 
 const Index = () => {
@@ -59,12 +58,18 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Countdown Timer */}
+          {/* Coming Soon */}
           <div className="space-y-4">
             <h3 className="text-xl md:text-2xl font-semibold text-foreground fade-in">
               Launching Soon
             </h3>
-            <CountdownTimer />
+            <div className="fade-in">
+              <div className="card-gradient rounded-2xl p-8 md:p-12">
+                <h2 className="text-4xl md:text-6xl font-bold text-gradient">
+                  Coming Soon
+                </h2>
+              </div>
+            </div>
           </div>
 
           {/* Email Signup */}
