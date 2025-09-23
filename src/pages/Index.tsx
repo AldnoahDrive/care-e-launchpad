@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Mail, Heart, Zap } from 'lucide-react';
 import EmailSignup from '@/components/EmailSignup';
+import DeliveryAnimation from '@/components/DeliveryAnimation';
 
 const Index = () => {
   useEffect(() => {
@@ -59,15 +60,16 @@ const Index = () => {
           </div>
 
           {/* Coming Soon */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <h3 className="text-xl md:text-2xl font-semibold text-foreground fade-in">
               Launching Soon
             </h3>
             <div className="fade-in">
-              <div className="card-gradient rounded-2xl p-8 md:p-12">
+              <div className="card-gradient rounded-2xl p-8 md:p-12 space-y-6">
                 <h2 className="text-4xl md:text-6xl font-bold text-gradient">
                   Coming Soon
                 </h2>
+                <DeliveryAnimation />
               </div>
             </div>
           </div>
