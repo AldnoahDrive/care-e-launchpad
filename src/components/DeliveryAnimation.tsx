@@ -1,4 +1,4 @@
-import { Bike, Package, MapPin } from 'lucide-react';
+import { Bike, Package, MapPin, Cross } from 'lucide-react';
 
 const DeliveryAnimation = () => {
   return (
@@ -11,9 +11,9 @@ const DeliveryAnimation = () => {
         <MapPin className="w-6 h-6 text-primary" />
       </div>
       
-      {/* End Point */}
+      {/* Hospital Destination */}
       <div className="absolute right-4 top-1/2 transform -translate-y-1/2 animate-pulse">
-        <MapPin className="w-6 h-6 text-accent" />
+        <Cross className="w-6 h-6 text-red-500" />
       </div>
       
       {/* Delivery Rider Animation */}

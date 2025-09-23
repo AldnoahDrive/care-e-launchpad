@@ -54,7 +54,7 @@ const Index = () => {
             <div className="inline-flex items-center space-x-2 bg-white/50 backdrop-blur-sm rounded-full px-6 py-3 border border-primary/20">
               <Zap className="w-5 h-5 text-accent" />
               <span className="text-lg md:text-xl font-semibold text-foreground">
-                Fast. Reliable. Life-Saving Logistics.
+                Fast, Reliable, Life-Saving Logistics
               </span>
             </div>
           </div>
