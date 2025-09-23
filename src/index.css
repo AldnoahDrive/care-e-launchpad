@@ -8,35 +8,59 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* CARE-E Brand Colors - Medical Blue + Warm Accents */
+    --background: 220 25% 97%;
+    --foreground: 215 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 20% 98%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 20% 98%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Medical Trust Blue */
+    --primary: 210 85% 45%;
+    --primary-foreground: 220 25% 97%;
+    --primary-light: 210 85% 55%;
+    --primary-dark: 210 85% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Cool Medical Gray */
+    --secondary: 215 20% 88%;
+    --secondary-foreground: 215 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted: Soft Medical Backgrounds */
+    --muted: 215 20% 92%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Warm Care Orange */
+    --accent: 25 85% 60%;
+    --accent-foreground: 220 25% 97%;
+    --accent-light: 25 85% 70%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Emergency Red for urgent actions */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 220 25% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 20% 88%;
+    --input: 215 20% 95%;
+    --ring: 210 85% 45%;
 
-    --radius: 0.5rem;
+    /* Design tokens */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 85% 45%) 0%, hsl(215 75% 55%) 50%, hsl(25 85% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 20% 98%) 0%, hsl(215 20% 96%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(25 85% 60%) 0%, hsl(35 85% 65%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(210 85% 45% / 0.1);
+    --shadow-card: 0 8px 30px -4px hsl(210 85% 45% / 0.15);
+    --shadow-glow: 0 0 40px hsl(210 85% 45% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +124,46 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+  }
+}
+
+@layer components {
+  /* Hero button with gradient and glow effect */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground font-medium px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+  
+  /* Card with soft gradient background */
+  .card-gradient {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* Animated fade-in elements */
+  .fade-in {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+  
+  .fade-in.visible {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  /* Glowing text effect for hero */
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  
+  /* Gradient text */
+  .text-gradient {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Email input with focus effects */
+  .input-focus {
+    @apply transition-all duration-300 focus:ring-2 focus:ring-primary/20 focus:border-primary;
   }
 }
