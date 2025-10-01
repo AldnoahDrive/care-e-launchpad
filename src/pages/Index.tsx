@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
-import { Mail, Heart, Zap } from 'lucide-react';
+import { Mail, Zap } from 'lucide-react';
 import EmailSignup from '@/components/EmailSignup';
 import DeliveryAnimation from '@/components/DeliveryAnimation';
+import logo from '@/assets/care-e-logo.jpeg';
 
 const Index = () => {
   useEffect(() => {
@@ -31,13 +32,12 @@ const Index = () => {
           
           {/* Logo & Main Headline */}
           <div className="fade-in space-y-6">
-            <div className="inline-flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center animate-pulse-glow">
-                <Heart className="w-6 h-6 md:w-8 md:h-8 text-white" />
-              </div>
-              <h1 className="text-3xl md:text-5xl font-bold text-gradient">
-                CARE-E
-              </h1>
+            <div className="inline-flex items-center justify-center mb-6">
+              <img 
+                src={logo} 
+                alt="CARE-E Logo" 
+                className="w-32 h-32 md:w-40 md:h-40 object-contain animate-pulse-glow"
+              />
             </div>
             
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">

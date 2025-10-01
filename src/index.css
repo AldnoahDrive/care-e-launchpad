@@ -8,55 +8,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* CARE-E Brand Colors - Medical Blue + Warm Accents */
-    --background: 220 25% 97%;
-    --foreground: 215 25% 15%;
+    /* CARE-E Brand Colors - Medical Red + Ice Blue */
+    --background: 220 30% 98%;
+    --foreground: 220 20% 12%;
 
-    --card: 220 20% 98%;
-    --card-foreground: 215 25% 15%;
+    --card: 220 25% 99%;
+    --card-foreground: 220 20% 12%;
 
-    --popover: 220 20% 98%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 220 25% 99%;
+    --popover-foreground: 220 20% 12%;
 
-    /* Primary: Medical Trust Blue */
-    --primary: 210 85% 45%;
-    --primary-foreground: 220 25% 97%;
-    --primary-light: 210 85% 55%;
-    --primary-dark: 210 85% 35%;
+    /* Primary: Medical Red from Logo */
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 0 72% 61%;
+    --primary-dark: 0 72% 41%;
 
-    /* Secondary: Cool Medical Gray */
-    --secondary: 215 20% 88%;
-    --secondary-foreground: 215 25% 15%;
+    /* Secondary: Soft Ice Blue */
+    --secondary: 190 60% 92%;
+    --secondary-foreground: 220 20% 12%;
 
-    /* Muted: Soft Medical Backgrounds */
-    --muted: 215 20% 92%;
-    --muted-foreground: 215 15% 45%;
+    /* Muted: Light Ice Blue Backgrounds */
+    --muted: 190 40% 96%;
+    --muted-foreground: 220 15% 45%;
 
-    /* Accent: Warm Care Orange */
-    --accent: 25 85% 60%;
-    --accent-foreground: 220 25% 97%;
-    --accent-light: 25 85% 70%;
+    /* Accent: Vibrant Ice Blue */
+    --accent: 190 75% 65%;
+    --accent-foreground: 220 20% 12%;
+    --accent-light: 190 75% 75%;
 
     /* Emergency Red for urgent actions */
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 220 25% 97%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 88%;
-    --input: 215 20% 95%;
-    --ring: 210 85% 45%;
+    --border: 190 30% 90%;
+    --input: 190 25% 96%;
+    --ring: 0 72% 51%;
 
     /* Design tokens */
     --radius: 0.75rem;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 85% 45%) 0%, hsl(215 75% 55%) 50%, hsl(25 85% 60%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 20% 98%) 0%, hsl(215 20% 96%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(25 85% 60%) 0%, hsl(35 85% 65%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(0 65% 55%) 30%, hsl(190 75% 65%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 99%) 0%, hsl(190 20% 97%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(190 75% 65%) 0%, hsl(200 75% 70%) 100%);
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(210 85% 45% / 0.1);
-    --shadow-card: 0 8px 30px -4px hsl(210 85% 45% / 0.15);
-    --shadow-glow: 0 0 40px hsl(210 85% 45% / 0.3);
+    --shadow-soft: 0 4px 20px -2px hsl(0 72% 51% / 0.1);
+    --shadow-card: 0 8px 30px -4px hsl(0 72% 51% / 0.12);
+    --shadow-glow: 0 0 40px hsl(0 72% 51% / 0.25);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
