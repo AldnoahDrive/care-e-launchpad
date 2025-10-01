@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Bike, Truck, Package, MapPin, Cross } from 'lucide-react';
-import { Plane } from 'lucide-react';
+import { Bike, Truck, Package, MapPin, Cross, Radio } from 'lucide-react';
 
 const DeliveryAnimation = () => {
   const [vehicleIndex, setVehicleIndex] = useState(0);
@@ -8,7 +7,7 @@ const DeliveryAnimation = () => {
   const vehicles = [
     { icon: Bike, label: 'Bike' },
     { icon: Truck, label: 'Van' },
-    { icon: Plane, label: 'Drone' }
+    { icon: Radio, label: 'Drone' }
   ];
   
   useEffect(() => {
