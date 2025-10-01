@@ -1,6 +1,26 @@
-import { Bike, Package, MapPin, Cross } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Bike, Truck, Package, MapPin, Cross } from 'lucide-react';
+import { Plane } from 'lucide-react';
 
 const DeliveryAnimation = () => {
+  const [vehicleIndex, setVehicleIndex] = useState(0);
+  
+  const vehicles = [
+    { icon: Bike, label: 'Bike' },
+    { icon: Truck, label: 'Van' },
+    { icon: Plane, label: 'Drone' }
+  ];
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVehicleIndex((prev) => (prev + 1) % vehicles.length);
+    }, 3000); // Change vehicle every 3 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
+  
+  const CurrentVehicle = vehicles[vehicleIndex].icon;
+  
   return (
     <div className="relative w-full h-24 overflow-hidden">
       {/* Route Line */}
@@ -16,10 +36,10 @@ const DeliveryAnimation = () => {
         <Cross className="w-6 h-6 text-red-500" />
       </div>
       
-      {/* Delivery Rider Animation */}
+      {/* Delivery Vehicle Animation */}
       <div className="absolute top-1/2 transform -translate-y-1/2 animate-delivery-ride">
-        <div className="flex items-center space-x-1">
-          <Bike className="w-8 h-8 text-primary animate-bounce" />
+        <div className="flex items-center space-x-2">
+          <CurrentVehicle className="w-8 h-8 text-primary transition-all duration-500" />
           <Package className="w-4 h-4 text-accent animate-pulse" />
         </div>
       </div>
