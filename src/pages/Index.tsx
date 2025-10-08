@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Mail, Zap } from 'lucide-react';
 import EmailSignup from '@/components/EmailSignup';
 import DeliveryAnimation from '@/components/DeliveryAnimation';
-import logo from '@/assets/care-e-logo.jpeg';
+import logo from '@/assets/care-e-new-logo.jpg';
 
 const Index = () => {
   useEffect(() => {
