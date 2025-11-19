@@ -2,6 +2,12 @@ import { useEffect } from 'react';
 import { Mail, Zap } from 'lucide-react';
 import EmailSignup from '@/components/EmailSignup';
 import DeliveryAnimation from '@/components/DeliveryAnimation';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import logo from '@/assets/care-e-new-logo.jpg';
 
 const Index = () => {
@@ -108,6 +114,108 @@ const Index = () => {
               <p className="text-muted-foreground text-left leading-relaxed">
                 <strong>CARE-E</strong> is an innovative emergency medical logistics platform that leverages artificial intelligence to optimize cold-chain delivery routes for time-sensitive medical supplies. Our AI-powered system ensures that vaccines, blood products, organs, and critical medications are transported with precision timing and temperature control, saving lives through technology-driven healthcare logistics.
               </p>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section className="fade-in" aria-labelledby="faq-heading">
+            <div className="max-w-3xl mx-auto">
+              <h2 id="faq-heading" className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
+                Frequently Asked Questions
+              </h2>
+              <div className="card-gradient rounded-2xl p-6 md:p-8">
+                <Accordion type="single" collapsible className="w-full space-y-4">
+                  <AccordionItem value="item-1" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      What is this company?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      We are a technology-focused startup offering digital services and solutions designed to support customers and improve everyday operations.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-2" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      What services does the company provide?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      We provide general tech-based services and platform features that help users access reliable and efficient digital solutions.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-3" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      Who can use the company's platform?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      Our platform is designed for customers, individuals, and businesses looking for simple, high-quality, technology-driven tools and services.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-4" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      What is the company's mission?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      Our mission is to deliver accessible, innovative, and customer-friendly digital solutions that add value and improve user experience.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-5" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      Does the company offer customer support?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      Yes, we provide basic customer support to help users with questions, platform access, and service-related needs.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-6" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      What makes the platform reliable?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      Our platform uses standard technology practices, quality checks, and continuous improvements to maintain reliability and performance.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-7" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      Is the company's service available online?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      Yes, our services are delivered through an online platform that customers can access anytime.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-8" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      What type of products or features does the company offer?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      We offer general digital products and platform features built with a focus on usability, innovation, and smooth operations.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-9" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      How does the company ensure quality?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      We follow simple quality practices, regular updates, and customer feedback to keep our services efficient and dependable.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-10" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      How can someone contact the company?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      Users can reach us through the contact section on our website for support, questions, or general inquiries.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
             </div>
           </section>
 
