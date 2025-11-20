@@ -127,91 +127,109 @@ const Index = () => {
                 <Accordion type="single" collapsible className="w-full space-y-4">
                   <AccordionItem value="item-1" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      What is this company?
+                      What is CARE-E?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      We are a technology-focused startup offering digital services and solutions designed to support customers and improve everyday operations.
+                      CARE-E is an emergency cold-chain delivery service that transports blood, vaccines, and critical medical supplies quickly and safely across Chennai.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-2" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      What services does the company provide?
+                      Who can use CARE-E's services?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      We provide general tech-based services and platform features that help users access reliable and efficient digital solutions.
+                      Hospitals, clinics, blood banks, diagnostic labs, and other healthcare facilities can request on-demand deliveries through our app or web portal.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-3" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      Who can use the company's platform?
+                      How fast is the delivery?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      Our platform is designed for customers, individuals, and businesses looking for simple, high-quality, technology-driven tools and services.
+                      Most deliveries reach within 30–60 minutes, depending on distance and traffic.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-4" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      What is the company's mission?
+                      How do you keep items temperature-controlled?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      Our mission is to deliver accessible, innovative, and customer-friendly digital solutions that add value and improve user experience.
+                      We use smart IoT-enabled cold boxes that maintain 2–8°C and continuously track temperature during transit.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-5" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      Does the company offer customer support?
+                      What items can CARE-E deliver?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      Yes, we provide basic customer support to help users with questions, platform access, and service-related needs.
+                      Blood units, vaccines, lab samples, emergency medicines, and other temperature-sensitive medical supplies.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-6" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      What makes the platform reliable?
+                      Is the service available 24/7?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      Our platform uses standard technology practices, quality checks, and continuous improvements to maintain reliability and performance.
+                      Yes. CARE-E operates round-the-clock for emergency medical requests.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-7" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      Is the company's service available online?
+                      How can I request a delivery?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      Yes, our services are delivered through an online platform that customers can access anytime.
+                      Use the CARE-E mobile app, web dashboard, or partner hospital login to place a request in seconds.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-8" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      What type of products or features does the company offer?
+                      Are deliveries tracked in real time?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      We offer general digital products and platform features built with a focus on usability, innovation, and smooth operations.
+                      Yes. Hospitals can see live GPS tracking, temperature data, and status updates for every order.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-9" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      How does the company ensure quality?
+                      Do riders follow medical handling standards?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      We follow simple quality practices, regular updates, and customer feedback to keep our services efficient and dependable.
+                      All riders are trained in proper cold-chain handling and follow strict SOPs for medical transport.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-10" className="border-border/50">
                     <AccordionTrigger className="text-left text-foreground hover:text-primary">
-                      How can someone contact the company?
+                      What is the cost of a delivery?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      Users can reach us through the contact section on our website for support, questions, or general inquiries.
+                      Pricing is based on distance and urgency. Hospitals can choose pay-per-delivery or subscription plans.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-11" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      Does CARE-E work with government hospitals?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      Currently we are focused on private hospitals; government partnerships are planned soon.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-12" className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:text-primary">
+                      How can my hospital partner with CARE-E?
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      You can sign up through our website or contact our onboarding team for a partnership setup.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
