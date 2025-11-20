@@ -1,0 +1,26 @@
+{
+  "name": "CARE-E - AI-Powered Emergency Medical Logistics",
+  "short_name": "CARE-E",
+  "description": "AI-powered cold-chain delivery for emergency medical supplies. Fast, reliable, life-saving logistics.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "medical", "business"],
+  "keywords": ["care-e", "emergency medical", "cold-chain", "AI logistics", "medical delivery", "healthcare"]
+}
