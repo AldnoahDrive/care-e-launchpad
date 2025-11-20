@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Mail, Zap } from 'lucide-react';
+import { Mail, Zap, Instagram, Youtube, Linkedin } from 'lucide-react';
 import EmailSignup from '@/components/EmailSignup';
 import DeliveryAnimation from '@/components/DeliveryAnimation';
 import {
@@ -266,6 +266,38 @@ const Index = () => {
             <div className="text-sm text-muted-foreground">
               Keywords: emergency medical delivery, AI healthcare logistics, cold-chain transport, medical supply delivery
             </div>
+            
+            {/* Social Media Links */}
+            <div className="flex justify-center items-center space-x-6 py-4">
+              <a 
+                href="https://www.instagram.com/careea001?igsh=ajhnbXV5NmdmMjIx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Follow CARE-E on Instagram"
+              >
+                <Instagram className="w-6 h-6" aria-hidden="true" />
+              </a>
+              <a 
+                href="https://youtube.com/@care-ea?si=Ar8LdNwvw-4GFWes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Subscribe to CARE-E on YouTube"
+              >
+                <Youtube className="w-6 h-6" aria-hidden="true" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/care-e/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Connect with CARE-E on LinkedIn"
+              >
+                <Linkedin className="w-6 h-6" aria-hidden="true" />
+              </a>
+            </div>
+            
             <p className="text-muted-foreground text-sm">
               © 2025 CARE-E. All rights reserved.
             </p>
